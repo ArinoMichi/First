@@ -11,32 +11,33 @@
         android:id="@+id/username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         android:text="Username"
-        android:padding="4dp"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:layout_marginTop="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/boton2"
-        app:layout_constraintStart_toStartOf="@id/login"
+        app:layout_constraintStart_toStartOf="@id/boton1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/password"
         android:layout_width="0dp"
-        android:background="@color/white"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
         android:text="Password"
-        android:padding="4dp"
+        android:background="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/username"
         app:layout_constraintEnd_toEndOf="@id/boton2"
-        app:layout_constraintStart_toStartOf="@id/login"/>
+        app:layout_constraintStart_toStartOf="@id/boton1"/>
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/boton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="LOGIN"
+        android:text="OK"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.35"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,9 +49,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:text="CANCEL"
-        app:layout_constraintBottom_toBottomOf="@+id/login"
-        app:layout_constraintStart_toEndOf="@+id/login"
-        app:layout_constraintTop_toTopOf="@+id/login" />
+        app:layout_constraintBottom_toBottomOf="@+id/boton1"
+        app:layout_constraintStart_toEndOf="@+id/boton1"
+        app:layout_constraintTop_toTopOf="@+id/boton1" />
 
     <ImageView
         android:layout_width="100dp"
@@ -60,6 +61,18 @@
         android:src="@drawable/bed_icon"
         app:layout_constraintBottom_toTopOf="@+id/username"
         app:layout_constraintEnd_toEndOf="@+id/boton2"
-        app:layout_constraintStart_toStartOf="@+id/login" />
+        app:layout_constraintStart_toStartOf="@+id/boton1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
