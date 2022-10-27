@@ -7,38 +7,52 @@
     tools:context=".MainActivity"
     android:background="@color/grey">
 
-    <TextView
-        android:id="@+id/username"
+
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Username"
-        android:padding="5dp"
-        android:background="@color/white"
-        android:layout_marginTop="32dp"
+        android:id="@+id/tilusername"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/guideRight"
         app:layout_constraintStart_toStartOf="@id/guideLeft"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:background="@color/white"
+            android:layout_marginTop="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/password"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:padding="5dp"
-        android:text="Password"
-        android:background="@color/white"
-        app:layout_constraintTop_toBottomOf="@+id/username"
+        android:id="@+id/password"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/guideRight"
-        app:layout_constraintStart_toStartOf="@id/guideLeft"/>
+        app:layout_constraintStart_toStartOf="@id/guideLeft"
+        app:layout_constraintTop_toBottomOf="@id/tilusername"
+        app:layout_constraintBottom_toTopOf="@+id/boton1"
+        app:startIconDrawable="@drawable/key"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/boton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:text="OK"
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintStart_toStartOf="@id/guideLeft"
+
         />
 
     <Button
@@ -47,9 +61,9 @@
         android:layout_height="wrap_content"
         android:text="CANCEL"
         app:layout_constraintBottom_toBottomOf="@+id/boton1"
-        app:layout_constraintStart_toOf="@+id/boton1"
-        app:layout_constraintTop_toTopOf="@+id/boton1"
-        app:layout_constraintEnd_toEndOf="@id/guideRight"/>
+        app:layout_constraintStart_toEndOf="@+id/boton1"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintEnd_toStartOf="@id/guideRight"/>
 
     <ImageView
         android:layout_width="100dp"
@@ -57,7 +71,7 @@
         android:layout_marginStart="74dp"
         android:layout_marginEnd="83dp"
         android:src="@drawable/bed_icon"
-        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintBottom_toTopOf="@+id/tilusername"
         app:layout_constraintEnd_toEndOf="@+id/guideRight"
         app:layout_constraintStart_toStartOf="@+id/guideLeft" />
 
