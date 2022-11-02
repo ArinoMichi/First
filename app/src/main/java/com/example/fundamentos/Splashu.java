@@ -5,26 +5,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
-public class LoginActivity extends AppCompatActivity {
-    TextView nuevoUsu;
+public class Splashu extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_splashu);
 
-        nuevoUsu=findViewById(R.id.nuevo);
-        nuevoUsu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                SignUp();
-            }
-        });
+
 
     }
 
-    public void SignUp( View v){
+    public void signUp(View v){
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
         //quitar la navegacion
