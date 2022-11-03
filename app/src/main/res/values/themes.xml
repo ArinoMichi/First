@@ -14,6 +14,15 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="MyTheme" parent="Theme.Fundamentos">
+
+    </style>
+    <style name="MyTheme.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+    </style>
+
+
+
     <style name="Theme.Fundamentos.Fullscreen" parent="Theme.Fundamentos">
         <item name="android:actionBarStyle">@style/Widget.Theme.Fundamentos.ActionBar.Fullscreen
         </item>

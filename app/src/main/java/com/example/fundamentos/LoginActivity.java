@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
-    public void SignUp( View v){
+    public void SignUp(){
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
         //quitar la navegacion
