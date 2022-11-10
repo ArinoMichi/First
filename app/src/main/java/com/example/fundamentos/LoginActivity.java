@@ -23,14 +23,14 @@ public class LoginActivity extends AppCompatActivity {
         ImageView mGirl = findViewById(R.id.girl);
         foto=findViewById(R.id.icon);
 
-        Glide.with(this)
-          .load("https://as.com/meristation/imagenes/2017/04/22/album/1492840800_840800_000008_album_normal.png")
+        //Glide.with(this)
+         // .load("https://as.com/meristation/imagenes/2017/04/22/album/1492840800_840800_000008_album_normal.png")
           //      .load(R.drawable.girl)
-                .transition(DrawableTransitionOptions.withCrossFade(10))
-                .centerCrop()
+            //    .transition(DrawableTransitionOptions.withCrossFade(10))
+             //   .centerCrop()
 //                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.fucsia_200)))
 //                .circleCrop()
-                .into(mGirl);
+            //    .into(mGirl);
 
         Glide.with(this)
                 .load("https://64.media.tumblr.com/bb3dd0247c033d989c151cf5ee9335e7/925a1e04be1a9618-c8/s540x810/f7dc1016002f90004d1fbde3e06e29b8a9f9dc36.jpg")

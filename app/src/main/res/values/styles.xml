@@ -8,6 +8,11 @@
         <item name="background">@color/black_overlay</item>
         <item name="buttonBarStyle">?attr/buttonBarStyle</item>
     </style>
-
+    <style name="buttonoutlined">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="strokeColor">@android:color/white</item></style>
 
 </resources>
