@@ -12,7 +12,7 @@
         android:id="@+id/icon"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/iconfox"
+        app:srcCompat="@drawable/iconfox"
         app:layout_constraintBottom_toTopOf="@id/tilusername"
         app:layout_constraintTop_toTopOf="@id/guideTop"
         app:layout_constraintEnd_toEndOf="@+id/guideRight"

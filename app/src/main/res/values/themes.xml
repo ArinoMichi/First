@@ -24,9 +24,9 @@
 
 
     <style name="Theme.Fundamentos.Fullscreen" parent="Theme.Fundamentos">
-        <item name="android:actionBarStyle">@style/Widget.Theme.Fundamentos.ActionBar.Fullscreen
+        <item name="actionBarStyle">@style/Widget.Theme.Fundamentos.ActionBar.Fullscreen
         </item>
-        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
         <item name="android:windowBackground">@null</item>
     </style>
 
