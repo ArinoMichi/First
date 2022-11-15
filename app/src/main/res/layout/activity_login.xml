@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="@id/guideRight"
         app:layout_constraintStart_toStartOf="@id/guideLeft"
         app:layout_constraintTop_toTopOf="parent"
-        app:startIconDrawable="@drawable/user">
+        app:startIconDrawable="@drawable/bed_icon">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
