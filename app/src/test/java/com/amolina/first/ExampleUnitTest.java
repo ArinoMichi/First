@@ -1,4 +1,4 @@
-package com.example.fundamentos;
+package com.amolina.first;
 
 import org.junit.Test;
 

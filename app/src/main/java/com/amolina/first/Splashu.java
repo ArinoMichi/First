@@ -1,13 +1,18 @@
-package com.example.fundamentos;
+package com.amolina.first;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 public class Splashu extends AppCompatActivity {
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +20,14 @@ public class Splashu extends AppCompatActivity {
         setContentView(R.layout.activity_splashu);
 
         int tiempoTranscurrir = 2000; //1 segundo, 1000 millisegundos.
+        ImageView foto= findViewById(R.id.logo);
+
+        Animation myanim= AnimationUtils.loadAnimation(this,R.anim.blink);
+        foto.startAnimation(myanim);
+
+
+
+
 
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {

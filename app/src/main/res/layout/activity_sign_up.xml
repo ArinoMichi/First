@@ -4,10 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity"
-    android:background="@color/or">
+>
 
+    <ImageView
+        android:id="@+id/fondo"
+        android:layout_width="2500px"
+        android:layout_height="3000px"
+        android:foregroundGravity="center"
+        app:layout_constraintStart_toStartOf="@+id/guideImagen2"
+        app:layout_constraintTop_toTopOf="@+id/guideImagen" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideImagen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="-0.30"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideImagen2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="-0.60"/>
     <ImageView
         android:id="@+id/icon"
         android:layout_width="100dp"
@@ -112,7 +131,7 @@
             android:background="@color/white"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/boton1"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
@@ -133,6 +152,8 @@
         app:layout_constraintStart_toEndOf="@+id/boton1"
         app:layout_constraintTop_toBottomOf="@+id/repPass"
         app:layout_constraintEnd_toStartOf="@id/guideRight"/>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

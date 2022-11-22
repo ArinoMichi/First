@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.fundamentos'
+    namespace 'com.amolina.first'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.fundamentos"
+        applicationId "com.amolina.first"
         minSdk 21
         targetSdk 32
         versionCode 1

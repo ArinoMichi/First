@@ -1,4 +1,4 @@
-package com.example.fundamentos;
+package com.amolina.first;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.fundamentos", appContext.getPackageName());
+        assertEquals("com.amolina.first", appContext.getPackageName());
     }
 }

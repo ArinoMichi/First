@@ -9,7 +9,7 @@
     android:background="@color/black">
 
     <ImageView
-        android:id="@+id/fullscreen_content"
+        android:id="@+id/logo"
         android:layout_width="218dp"
         android:layout_height="272dp"
         android:gravity="center"

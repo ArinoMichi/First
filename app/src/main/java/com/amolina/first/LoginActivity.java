@@ -1,11 +1,11 @@
-package com.example.fundamentos;
+package com.amolina.first;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,6 +15,7 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 public class LoginActivity extends AppCompatActivity {
     TextView nuevoUsu;
     ImageView foto;
+    Button aceptar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                 .into(foto);
 
 
-
+        aceptar= findViewById(R.id.boton1);
         nuevoUsu=findViewById(R.id.nuevo);
         nuevoUsu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,9 +49,20 @@ public class LoginActivity extends AppCompatActivity {
                 SignUp();
             }
         });
-
+        aceptar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Acept();
+            }
+        });
     }
-
+    public void Acept(){
+        Intent intent = new Intent(this, Main.class);
+        startActivity(intent);
+        //quitar la navegacion
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+    }
     public void SignUp(){
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
