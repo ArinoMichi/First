@@ -12,11 +12,12 @@
         android:label="FindAHeart"
         android:roundIcon="@drawable/bed_icon"
         android:supportsRtl="true"
-        android:theme="@style/MyTheme.NoActionBar"
+        android:theme="@style/Theme.FundamentosSinBar"
         tools:targetApi="31">
         <activity
             android:name=".Main"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/Theme.Fundamentos">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -24,7 +25,7 @@
         <activity
             android:name=".Splashu"
             android:exported="true"
-            android:theme="@style/MyTheme.NoActionBar">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -10,14 +10,26 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/lillac</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.FundamentosSinBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/lillac</item>
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="MyTheme" parent="Theme.Fundamentos">
-
-    </style>
-    <style name="MyTheme.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="MyTheme.NoActionBar" parent="Theme.Fundamentos">
+        <item name="actionBarStyle">@style/Theme.MaterialComponents.DayNight.NoActionBar</item>
+        <item name="android:windowActionBar">false</item>
 
     </style>
 
