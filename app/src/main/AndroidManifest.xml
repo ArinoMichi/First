@@ -25,6 +25,7 @@
         <activity
             android:name=".Splashu"
             android:exported="true"
+            android:screenOrientation="fullSensor"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,6 +45,7 @@
                 android:value="" />
         </activity>
         <activity
+            android:screenOrientation="fullSensor"
             android:name=".LoginActivity"
             android:exported="false">
             <meta-data

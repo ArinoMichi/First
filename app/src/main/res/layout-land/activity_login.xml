@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient">
+    android:background="@color/blue">
     <ImageView
         android:id="@+id/girl"
         android:layout_width="match_parent"
@@ -60,6 +60,7 @@
         android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/password"
         app:layout_constraintStart_toStartOf="@id/guideLeft"
+        android:layout_margin="20dp"
 
         />
 
@@ -69,12 +70,11 @@
         android:layout_height="wrap_content"
         android:text="CANCEL"
         android:layout_marginLeft="8dp"
+        android:layout_margin="20dp"
         android:backgroundTint="@color/buttonselector"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/boton1"
-        app:layout_constraintStart_toEndOf="@+id/boton1"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintEnd_toStartOf="@id/guideRight"/>
+        app:layout_constraintEnd_toStartOf="@id/guideRight"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <ImageView
         android:id="@+id/icon"
@@ -103,13 +103,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.20"/>
+        app:layout_constraintGuide_percent="0.30"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideRight"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.80"/>
+        app:layout_constraintGuide_percent="0.70"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
