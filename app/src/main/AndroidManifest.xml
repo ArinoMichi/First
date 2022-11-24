@@ -17,6 +17,7 @@
         <activity
             android:name=".Main"
             android:exported="false"
+            android:parentActivityName=".LoginActivity"
             android:theme="@style/Theme.Fundamentos">
             <meta-data
                 android:name="android.app.lib_name"

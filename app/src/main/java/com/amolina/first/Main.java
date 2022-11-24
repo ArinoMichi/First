@@ -64,6 +64,9 @@ public class Main extends AppCompatActivity {
             Intent intent = new Intent(this,LoginActivity.class);
             startActivity(intent);
         }
+        if (id == R.id.exit){
+            System.exit(0);
+        }
         return super.onOptionsItemSelected(item);
     }
     @Override

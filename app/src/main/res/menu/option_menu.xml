@@ -22,6 +22,11 @@
         android:title="Log Out"
         android:icon="@drawable/ic_baseline_settings_24"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/exit"
+        android:orderInCategory="100"
+        android:title="Exit App"
+        app:showAsAction="never"/>
 
 
 </menu>
