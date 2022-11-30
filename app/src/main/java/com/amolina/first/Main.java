@@ -1,10 +1,12 @@
 package com.amolina.first;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
@@ -15,6 +17,7 @@ import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 public class Main extends AppCompatActivity {
@@ -40,12 +43,14 @@ public class Main extends AppCompatActivity {
 
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.option_menu, menu);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -57,18 +62,22 @@ public class Main extends AppCompatActivity {
             return true;
         }
         if (id == R.id.like) {
-            Toast toast = Toast.makeText(this,"Added to favourites",Toast.LENGTH_LONG );
+            Toast toast = Toast.makeText(this, "Added to favourites", Toast.LENGTH_LONG);
             toast.show();
         }
-        if (id == R.id.logout){
-            Intent intent = new Intent(this,LoginActivity.class);
+        if (id == R.id.logout) {
+            Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
         }
-        if (id == R.id.exit){
+        if (id == R.id.exit) {
             System.exit(0);
+        }
+        if (id == R.id.alert) {
+            showAlertDialogButtonClicked(this);
         }
         return super.onOptionsItemSelected(item);
     }
+
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         getMenuInflater().inflate(R.menu.menu_context, menu);
@@ -117,4 +126,52 @@ public class Main extends AppCompatActivity {
         }
     }
 
+    public void showAlertDialogButtonClicked(Main view) {
+        // setup the alert builder
+        MaterialAlertDialogBuilder builder = new
+                MaterialAlertDialogBuilder(this);
+        //el dialogo estandar tiene título/icono pero podemos sustituirlo
+        //por un XML a medida
+
+        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view,null));
+        builder.setTitle("Is that you?");
+        builder.setMessage("Log in please");
+
+        builder.setPositiveButton("Accept", new
+                DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // do something like...
+                        dialog.dismiss();
+                    }
+                });
+        builder.setNegativeButton("Cancel", new
+                DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // do something like...
+                        identidadFalsa();
+
+                    }
+                });
+
+        builder.setNeutralButton("Exit", new
+                DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // do something like...
+                        dialog.dismiss();
+                    }
+                });
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+    public  void identidadFalsa(){
+        Toast toasto = Toast.makeText(this, "No nos fiamos sorry", Toast.LENGTH_LONG);
+        toasto.show();
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
 }

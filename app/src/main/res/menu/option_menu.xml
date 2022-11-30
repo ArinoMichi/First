@@ -27,6 +27,11 @@
         android:orderInCategory="100"
         android:title="Exit App"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/alert"
+        android:orderInCategory="100"
+        android:title="Alert"
+        app:showAsAction="never"/>
 
 
 </menu>
