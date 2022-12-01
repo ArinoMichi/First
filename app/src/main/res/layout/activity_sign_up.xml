@@ -72,8 +72,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
-            android:background="@color/white"
+            android:hint="@string/username"
+            android:background="@color/white2"
             android:layout_marginTop="15dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -89,8 +89,8 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:background="@color/white" />
+            android:hint="@string/email"
+            android:background="@color/white2" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -107,9 +107,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="@string/password"
             android:inputType="textPassword"
-            android:background="@color/white" />
+            android:background="@color/white2" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -126,26 +126,26 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Repeat password"
+            android:hint="@string/repeat_password"
             android:inputType="textPassword"
-            android:background="@color/white"/>
+            android:background="@color/white2"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/boton1"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="SIGN IN"
+        android:text="@string/sign_in"
         app:layout_constraintTop_toBottomOf="@+id/repPass"
         app:layout_constraintStart_toStartOf="@id/guideLeft"
-        style="@style/buttonoutlined"
+        android:backgroundTint="@color/orange"
         />
 
     <Button
         android:id="@+id/boton2"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:text="CANCEL"
+        android:text="@string/cancel"
         android:layout_marginLeft="8dp"
         android:backgroundTint="@color/orange"
         app:layout_constraintBottom_toBottomOf="@+id/boton1"

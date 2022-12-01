@@ -1,6 +1,20 @@
 <resources>
-    <string name="app_name">Fundamentos</string>
+    <string name="app_name" translatable="false">First</string>
     <string name="title_activity_splash">Splash</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="copy">Copy</string>
+    <string name="download">Download</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="cancel">CANCEL</string>
+    <string name="new_sign_in">New? sign in</string>
+    <string name="ok">OK</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="like">Like</string>
+    <string name="settings">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="exit_app">Exit App</string>
+    <string name="alert">Alert</string>
 </resources>

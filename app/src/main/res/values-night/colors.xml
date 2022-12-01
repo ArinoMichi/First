@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="blue">#A09ABC</color>
-    <color name="pink">#AE86A6</color>
-    <color name="lillac">#C28CAE</color>
-    <color name="or">#FFECCC</color>
-    <color name="orange">#FF9B54</color>
+    <color name="blue">#6C6880</color>
+    <color name="pink">#6C5367</color>
+    <color name="lillac">#88637A</color>
+    <color name="or">#AC8D59</color>
+    <color name="orange">#9E5F33</color>
 
     <color name="purple_700">#E0B0FF</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="white2">#FFFFFF</color>
-    <color name="grey">#D5CFE1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white2">#6C5367</color>
+    <color name="grey">#9A96A1</color>
     <color name="light_blue_600">#FF039BE5</color>
     <color name="light_blue_900">#FF01579B</color>
     <color name="light_blue_A200">#FF40C4FF</color>

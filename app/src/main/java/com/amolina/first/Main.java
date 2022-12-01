@@ -160,7 +160,7 @@ public class Main extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         // do something like...
-                        dialog.dismiss();
+                        finishAfterTransition();
                     }
                 });
         // create and show the alert dialog
@@ -169,9 +169,9 @@ public class Main extends AppCompatActivity {
     }
 
     public  void identidadFalsa(){
-        Toast toasto = Toast.makeText(this, "No nos fiamos sorry", Toast.LENGTH_LONG);
+        Toast toasto = Toast.makeText(this, "Vuelve a iniciar sesion", Toast.LENGTH_LONG);
         toasto.show();
-        Intent intent = new Intent(this, LoginActivity.class);
+        Intent intent = new Intent(this, Splashu.class);
         startActivity(intent);
     }
 }
