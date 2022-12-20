@@ -31,6 +31,9 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent intent=new Intent(this,MainBAB.class);
+        startActivity(intent);
+
 //casting a la vista a la que se aplica el menu contextual
         mycontext = findViewById(R.id.vistaweb);
         registerForContextMenu(mycontext);
@@ -133,7 +136,7 @@ public class Main extends AppCompatActivity {
         //el dialogo estandar tiene título/icono pero podemos sustituirlo
         //por un XML a medida
 
-        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view,null));
+
         builder.setTitle("Is that you?");
         builder.setMessage("Log in please");
 
